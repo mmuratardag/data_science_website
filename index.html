@@ -42,8 +42,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-cc63fce9873912f1bbbccf05079cc9ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-08799928d293638fe9563d5c5a2794e5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -254,8 +252,8 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="https://mmuratardag.github.io/"> 
+<span class="menu-text">Landing Page</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://mmuratardag.github.io/portfolio_website/portfolio.html"> 
@@ -312,66 +310,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>My domain expertise is particularly relevant to political consulting, targeted communication, and public administration. My track record includes work on consumer behavior, customer segmentation, institutional culture, and mental well-being.</p>
-<p>I am currently taking a career break for my professional development.</p>
-<p>I worked as a data scientist at <a href="https://www.bcw-global.com/" target="_blank">BCW Global, Europe &amp; Africa</a>. I served as the Turkish Language Group Leader in the <a href="https://joint-research-centre.ec.europa.eu/index_en" target="_blank">European Commission Joint Research Centre</a>’s <a href="https://knowledge4policy.ec.europa.eu/projects-activities/valuesml-unravelling-expressed-values-media-informed-policy-making_en" target="_blank">ValuesML - Unravelling Expressed Values in the Media for Informed Policy Making</a> project. I am a former academic specializing in political psychology<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> with a background in psychometrics, psycholinguistics, cross-cultural research, and modeling subjectivity.</p>
-<p>Some of my projects are available on <a href="https://github.com/mmuratardag" target="_blank"><i class="fa-brands fa-github" aria-label="github"></i></a>; browsing my <a href="https://mmuratardag.github.io/portfolio_website/portfolio.html">portfolio website</a> is another option.</p>
-<div id="total-downloads">
-<script>
-  // Define the two API endpoints
-const urls = [
-  "https://huggingface.co/api/models/MMADS/MoralFoundationsClassifier?expand[]=downloads&expand[]=downloadsAllTime",
-  "https://huggingface.co/api/models/MMADS/RoBERTa-OrgCulture-Classifier?expand[]=downloads&expand[]=downloadsAllTime"
-];
-
-// Function to fetch and display the total downloads
-async function displayTotalDownloads() {
-  try {
-    // Fetch data from both endpoints concurrently
-    const responses = await Promise.all(
-      urls.map(url => fetch(url).then(response => response.json()))
-    );
-    
-    // Sum up the total downloads from both models
-    const totalDownloads = responses.reduce((sum, modelData) => {
-      return sum + (modelData.downloadsAllTime || 0);
-    }, 0);
-    
-    // Insert the download count and a small Hugging Face logo into the placeholder
-    const container = document.getElementById('total-downloads');
-    if (container) {
-      // Clear any existing content
-      container.textContent = '';
-      
-      // Create text nodes and elements
-      const textBefore = document.createTextNode('I have two fine-tuned models available at ');
-      container.appendChild(textBefore);
-      
-      const img = document.createElement('img');
-      img.src = 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg';
-      img.alt = 'Hugging Face Logo';
-      img.style.width = '1em';
-      img.style.verticalAlign = 'middle';
-      img.style.marginRight = '0.25em';
-      container.appendChild(img);
-      
-      const textAfter = document.createTextNode(` so far, they have been downloaded ${totalDownloads.toLocaleString()} times.`);
-      container.appendChild(textAfter);
-    } else {
-      console.error("Container element not found");
-    }
-  } catch (error) {
-    console.error("Error fetching download counts:", error);
-  }
-}
-
-// Run the function immediately
-displayTotalDownloads();
-</script>
-</div>
-<p><a href="https://huggingface.co/MMADS" target="_blank">Keep an 👁️ on my HuggingFace activity here</a>.</p>
-<p>To find out more about me as the political psychologist, visit my <a href="https://mmuratardag.github.io/academic_website">academic website</a>.</p>
-<p>I occasionally make blogposts; read them <a href="https://mmuratardag.github.io/blog_posts">here</a>.</p>
-<p>Feel free to connect on <a href="https://www.linkedin.com/in/mmuratardag" target="_blank"><i class="fa-brands fa-linkedin" aria-label="linkedin"></i></a></p>
 
 
 
@@ -382,7 +320,6 @@ displayTotalDownloads();
 <li id="fn1"><p>This has been the workhorse of psychometrics for decades, with extended applications in causal inference. It is a flexible modeling approach for the statistical inference of not-directly-measurable concepts.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>This has emerged as an alternative or supplementary method to structural equation modeling.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>If you have a marketing background, read this as customer lifetime value or churn; sociologists call this time-to-event analysis or event history analysis. Whatever you call it, this is used to evaluate whether and when an event occurs.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>In case, you are wondering what political psychology is <a href="https://pprg.stanford.edu/what-political-psychology" target="_blank">this</a>, <a href="https://en.wikipedia.org/wiki/Political_psychology" target="_blank">this</a> &amp; <a href="https://ispp.org" target="_blank">this</a> can help form an accurate impression. Read two related blog post <a href="https://mmuratardag.github.io/blog_posts/blog_2022_04_23.html">here</a> and <a href="https://mmuratardag.github.io/blog_posts/blog_2022_06_15.html">here</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,6 +1,6 @@
 # .gitlab-ci.yml
 # GitLab CI/CD configuration file for deploying a static site to GitLab Pages
-# academic_website
+# data_science_website
 
 pages:
   stage: deploy
